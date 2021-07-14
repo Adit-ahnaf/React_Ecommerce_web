@@ -8,13 +8,14 @@ const ProductsMap = (props) => {
     
     console.log(items)
     
+    
     return (
         <div class="grid grid-cols-4 gap-2">
-            { items.map(product=>{
-                <Cardcomponent product ={product} AddtoCart={AddtoCart}></Cardcomponent>
-            })
-           
-            }
+        
+             {items.map((product) => (
+                
+          <Cardcomponent  product={product} AddtoCart={AddtoCart} ></Cardcomponent>
+        ))}
         </div>
         
       

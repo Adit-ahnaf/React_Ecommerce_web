@@ -3,6 +3,7 @@ import './App.css';
 import ProductsMap from './Components/ProductsMap';
 import {Route, Switch, BrowserRouter as Router} from '../node_modules/react-router-dom';
 import Mainitem from './Components/Mainitem';
+import CartItems from './Components/CartItems';
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
   <Router>
       <Switch>
       <Route exact path="/" component={Mainitem} />
+      <Route exact path="/cart" component={CartItems} />
+      
       
       </Switch>
     </Router>

@@ -4,6 +4,7 @@ const Cardcomponent = (props) => {
  
  const {product, AddtoCart} = props;
  console.log(product)
+ 
 
     return (
         
@@ -17,8 +18,9 @@ const Cardcomponent = (props) => {
             <p>Tk {product.price}<span class="text-sm">00</span></p>
             <div className="grid grid-cols-2 gap-4">
             <a class="text-center text-sm bg-blue-500 rounded py-2 text-white mt-2" href="">View Item</a>
-            <button onClick={AddtoCart} class="text-center text-sm bg-red-500 rounded text-white mx-2">+</button>
+            <button onClick={() => AddtoCart(product)} class="text-center text-sm bg-red-500 rounded text-white mx-2">+</button>
             </div>
+            <button Link>hello</button>
         </div>
     </div>
 

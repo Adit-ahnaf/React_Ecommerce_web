@@ -1,25 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 
 const CartItems = (props) => {
+    const {cartItems, AddtoCart, onRemove } = props;
 
-    const { CartItems, AddtoCart} = props;
-    console.log(CartItems);
+    console.log(cartItems)
+   
     
     return (
-     <div>
+      <div>
         
-        
-         {
-           CartItems.map((item)=>{
-              <div>
-                  {CartItems.name}
-              </div>
-           })
-       
-          }
-     </div>
-    
+      </div>  
     );
-};
+  }
+    
 
 export default CartItems;
