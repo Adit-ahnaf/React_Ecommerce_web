@@ -8,6 +8,7 @@ const CartItems = (props) => {
     return (
      <div>
         
+        
          {
            CartItems.map((item)=>{
               <div>

@@ -2,7 +2,7 @@
 import './App.css';
 import ProductsMap from './Components/ProductsMap';
 import {Route, Switch, BrowserRouter as Router} from '../node_modules/react-router-dom';
-import CartItems from './Components/CartItems';
+import Mainitem from './Components/Mainitem';
 
 
 function App() {
@@ -28,8 +28,8 @@ function App() {
   </nav>
   <Router>
       <Switch>
-      <Route exact path="/" component={ProductsMap} />
-      <Route exact path="/cartitem" component={CartItems} />
+      <Route exact path="/" component={Mainitem} />
+      
       </Switch>
     </Router>
   </div>

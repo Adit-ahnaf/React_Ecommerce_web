@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cardcomponent = (props) => {
  
- const {product,AddtoCart} =props;
+ const {product, AddtoCart} = props;
  console.log(product)
 
     return (
