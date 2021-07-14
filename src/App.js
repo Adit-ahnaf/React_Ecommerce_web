@@ -1,7 +1,8 @@
 
 import './App.css';
-import Cardcomponent from './Components/Cardcomponent';
+import ProductsMap from './Components/ProductsMap';
 import {Route, Switch, BrowserRouter as Router} from '../node_modules/react-router-dom';
+import CartItems from './Components/CartItems';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
           Home
         </a>
+        
       </div>
       <div>
         <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-green-900 border-green-800 hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Cart</a>
@@ -26,7 +28,8 @@ function App() {
   </nav>
   <Router>
       <Switch>
-      <Route exact path="/" component={Cardcomponent} />
+      <Route exact path="/" component={ProductsMap} />
+      <Route exact path="/cartitem" component={CartItems} />
       </Switch>
     </Router>
   </div>
