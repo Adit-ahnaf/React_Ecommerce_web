@@ -2,6 +2,7 @@
 import './App.css';
 import Cardcomponent from './Components/Cardcomponent';
 import {Route, Switch, BrowserRouter as Router} from '../node_modules/react-router-dom';
+import ProductsMap from './Components/ProductsMap';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
   </nav>
   <Router>
       <Switch>
-      <Route exact path="/" component={Cardcomponent} />
+      <Route exact path="/" component={ProductsMap} />
       </Switch>
     </Router>
   </div>
