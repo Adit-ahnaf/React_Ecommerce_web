@@ -1,15 +1,13 @@
-import React from "react";
-import data from "./Items";
+import React, { useContext, useState } from "react";
 import Cardcomponent from "./Cardcomponent";
 
-const ProductsMap = () => {
-  const { products } = data;
-  //console.log(products)
+const ProductsMap = (props) => {
+  const { items, AddtoCart } = props;
   return (
-    <div>
-      {products.map((products) => {
-        return <Cardcomponent products={products} />;
-      })}
+    <div class="grid grid-cols-4 gap-2">
+      {items.map((product) => (
+        <Cardcomponent product={product} AddtoCart={AddtoCart}></Cardcomponent>
+      ))}
     </div>
   );
 };
