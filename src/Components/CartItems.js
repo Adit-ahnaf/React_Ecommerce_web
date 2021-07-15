@@ -1,14 +1,15 @@
-import React, { useState} from 'react';
-
-const CartItems = (props) => {
-    const {cartItems, AddtoCart, onRemove } = props;
+import React, { useContext, useState} from 'react';
+import {itemcontext} from './Contex'
+const CartItems = () => {
+    
+    const {cartItems, AddtoCart, onRemove } = useContext(itemcontext);
 
     console.log(cartItems)
    
     
     return (
       <div>
-        
+       
       </div>  
     );
   }

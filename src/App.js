@@ -2,13 +2,18 @@
 import './App.css';
 import ProductsMap from './Components/ProductsMap';
 import {Route, Switch, BrowserRouter as Router} from '../node_modules/react-router-dom';
-import Mainitem from './Components/Mainitem';
 import CartItems from './Components/CartItems';
+import {Contex} from './Components/Contex';
+import Cardcomponent from './Components/Cardcomponent';
 
 
 function App() {
+
   return (
+
+    
     <div>
+      
     <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6 bg-green-300" >
     <div class="block lg:hidden">
       <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -27,14 +32,14 @@ function App() {
       </div>
     </div>
   </nav>
+  <Contex>
   <Router>
       <Switch>
-      <Route exact path="/" component={Mainitem} />
+      <Route exact path="/" component={ProductsMap} />
       <Route exact path="/cart" component={CartItems} />
-      
-      
       </Switch>
-    </Router>
+  </Router>
+    </Contex>
   </div>
   );
 }
