@@ -7,6 +7,10 @@ import {
 } from "../node_modules/react-router-dom";
 import Mainitem from "./Components/Mainitem";
 import CartItems from "./Components/CartItems";
+import HOCCartItemStore from "./Components/HOCCartItemStore";
+
+//const PowerComponent = HOCCartItemStore(Mainitem)
+//const PowerComponent = HOCCartItemStore(Mainitem)
 
 function App() {
   return (
